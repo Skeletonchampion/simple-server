@@ -5,10 +5,6 @@ import express from "express";
 
 const app = express();
 
-app.get("/", (req, res) => {
-    res.send("Home Page!");
-});
-
 app.listen(process.env.PORT || 5000, () => {
     console.log(`App is running on port ${process.env.PORT || 5000}`);
 });
